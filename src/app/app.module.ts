@@ -7,7 +7,7 @@ import { RegisterComponent } from './account/register/register.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 import { NotFoundComponent } from './not-found.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   {path:"", component: LoginComponent},
