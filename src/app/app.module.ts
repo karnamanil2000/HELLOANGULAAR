@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
@@ -43,6 +44,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     NgbModule,
     AccountModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

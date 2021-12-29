@@ -6,8 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { CustomFieldValidatorDirective } from './register/custom-field-validator.directive';
 import { AlreadyExistsValidatorDirective } from './register/already-exists-validator.directive';
 import { AccountService } from './account.service';
-//import { AccountService } from './account.service';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -20,6 +19,7 @@ import { AccountService } from './account.service';
   imports: [
     CommonModule,
     FormsModule,
+    NgbModule,
   ],
   providers: [
     AccountService

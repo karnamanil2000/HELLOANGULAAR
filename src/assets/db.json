@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "UserDetails": [
+    {
+      "fName": "Anil",
+      "lName": "Kumar",
+      "email": "anil@gmail.com",
+      "password": "anil123",
+      "confirmPassword": "anil123",
+      "id": 1
+    },
+    {
+      "fName": "Anish",
+      "lName": "Kumar",
+      "email": "anish@gmail.com",
+      "password": "anish123",
+      "confirmPassword": "anish123",
+      "id": 2
+    },
+    {
+      "fName": "Ram",
+      "lName": "Rao",
+      "email": "ram@gmail.com",
+      "password": "ram123",
+      "confirmPassword": "ram123",
+      "id": 3
+    },
+    {
+      "fName": "Rakesh",
+      "lName": "Sharma",
+      "email": "rakesh@gmail.com",
+      "password": "rakesh123",
+      "confirmPassword": "rakesh123",
+      "id": 4
+    },
+    {
+      "fName": "Rakesh",
+      "lName": "Sharma",
+      "email": "rakesh@gmail.com",
+      "password": "rakesh123",
+      "confirmPassword": "rakesh123",
+      "id": 5
+    },
+    {
+      "fName": "Rakesh",
+      "lName": "Sharma",
+      "email": "rakesh@gmail.com",
+      "password": "rakesh123",
+      "confirmPassword": "rakesh123",
+      "id": 6
+    },
+    {
+      "fName": "Ram",
+      "lName": "Rathode",
+      "email": "ram123@gmail.com",
+      "password": "ram123",
+      "confirmPassword": "ram123",
+      "id": 7
+    },
+    {
+      "fName": "Avesh",
+      "lName": "Khan",
+      "email": "avesh@gmail.com",
+      "password": "avesh123",
+      "confirmPassword": "avesh123",
+      "id": 8
+    }
+  ]
+}
