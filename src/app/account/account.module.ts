@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { CustomFieldValidatorDirective } from './register/custom-field-validator.directive';
+import { AlreadyExistsValidatorDirective } from './register/already-exists-validator.directive';
 
 
 
@@ -11,7 +12,8 @@ import { CustomFieldValidatorDirective } from './register/custom-field-validator
   declarations: [
     LoginComponent,
     RegisterComponent,
-    CustomFieldValidatorDirective
+    CustomFieldValidatorDirective,
+    AlreadyExistsValidatorDirective
   ],
   imports: [
     CommonModule,
