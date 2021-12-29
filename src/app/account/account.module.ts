@@ -5,6 +5,8 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { CustomFieldValidatorDirective } from './register/custom-field-validator.directive';
 import { AlreadyExistsValidatorDirective } from './register/already-exists-validator.directive';
+import { AccountService } from './account.service';
+//import { AccountService } from './account.service';
 
 
 
@@ -18,6 +20,9 @@ import { AlreadyExistsValidatorDirective } from './register/already-exists-valid
   imports: [
     CommonModule,
     FormsModule,
+  ],
+  providers: [
+    AccountService
   ]
 })
 export class AccountModule { }
