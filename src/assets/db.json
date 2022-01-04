@@ -50,28 +50,12 @@
       "id": 4
     },
     {
-      "fName": "Rakesh",
-      "lName": "Sharma",
-      "email": "rakesh@gmail.com",
-      "password": "rakesh123",
-      "confirmPassword": "rakesh123",
-      "id": 5
-    },
-    {
-      "fName": "Rakesh",
-      "lName": "Sharma",
-      "email": "rakesh@gmail.com",
-      "password": "rakesh123",
-      "confirmPassword": "rakesh123",
-      "id": 6
-    },
-    {
       "fName": "Ram",
       "lName": "Rathode",
       "email": "ram123@gmail.com",
       "password": "ram123",
       "confirmPassword": "ram123",
-      "id": 7
+      "id": 5
     },
     {
       "fName": "Avesh",
@@ -79,7 +63,7 @@
       "email": "avesh@gmail.com",
       "password": "avesh123",
       "confirmPassword": "avesh123",
-      "id": 8
+      "id": 6
     }
   ]
 }

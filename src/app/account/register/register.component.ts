@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { AccountService } from '../account.service';
 import { Register } from './register';
 
@@ -11,7 +11,9 @@ import { Register } from './register';
 })
 export class RegisterComponent implements OnInit {
   registrationViewModel: Register;
-  records!: Observable<string[]>;
+  $records!: Observable<string[]>;
+  userDetails: Register[] = [];
+  userEmails!: string[];
   alert = {type:'',isShowAlert:false, message:''};
   @ViewChild("registrationForm") form !: FormControl;
   constructor(private service: AccountService) { 
@@ -19,8 +21,19 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //const service = new AccountService();
-    this.records = this.service.getUserEmails();
+    //this.$records = this.service.getUserEmails();
+    this.service.getUserDetails()
+    .subscribe(data => {
+      this.userDetails = data;
+      console.log(this.userDetails);
+      this.userEmails = new Array(this.userDetails.length);
+      for (let index = 0; index < this.userDetails.length; index++) {
+        const element = this.userDetails[index];
+        this.userEmails[index] = element.email;
+      }
+      console.log(this.userEmails)
+      this.$records = of(this.userEmails);
+    });
   }
   closeAlert() {
     this.alert.isShowAlert = false;

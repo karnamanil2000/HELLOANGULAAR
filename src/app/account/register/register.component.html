@@ -3,6 +3,9 @@
       <ngb-alert [dismissible]="true" [type]="alert.type" (close)="closeAlert()" *ngIf="alert.isShowAlert">
         {{ alert.message }}
       </ngb-alert>
+      <div *ngFor = "let user of userDetails">
+        {{ user.email | json }}
+      </div>
       <h4 class="card-title text-center mb-4 mt-1">Sign up</h4>
       <hr />
       <form 
@@ -71,7 +74,7 @@
               required="required"
               pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
               appAlreadyExistsValidator
-              [records]="records"
+              [records]="$records"
             />
             <i *ngIf="email.touched && email.valid" class="fa fa-smile-o font-yellow-color smile"></i>
             <i *ngIf="email.touched && email.invalid" class="fa fa-frown-o font-red-color smile"></i>
